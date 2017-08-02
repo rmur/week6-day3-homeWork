@@ -1,7 +1,6 @@
-import static org.junit.Asser.*;
+import static org.junit.Assert.*;
 import org.junit.*;
 import driver_management.*;
-import behaviours.*
 
 public class DodgemCarTest {
 
@@ -9,11 +8,11 @@ public class DodgemCarTest {
 
   @Before
   public void before(){
-    car = new DodgemCar();
+    car = new DodgemCar(10);
   }
 
   @Test
   public void driverDistanceREturnTime(){
-    assrtEquals(100, car.driverDistance());
+    assertEquals(1, car.driveDistance(10));
   }
 }
